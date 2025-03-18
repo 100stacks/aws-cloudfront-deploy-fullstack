@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> init: README - technology stack
 # AWS Bedrock AI Lambda Serverless Next.js
 
 This repo builds and deploys a fullstack AWS environment with Next.js on the frontend.
@@ -14,7 +17,10 @@ This repo builds and deploys a fullstack AWS environment with Next.js on the fro
   - Radix UI - https://www.radix-ui.com
   - Radix Icons - https://www.radix-ui.com/icons
   - Tailwind CSS - https://tailwindcss.com
+<<<<<<< HEAD
   - monorepo using npm workspaces - https://docs.npmjs.com/cli/v11/using-npm/workspaces
+=======
+>>>>>>> init: README - technology stack
   - ...
 
 - **Backend:**
@@ -24,6 +30,7 @@ This repo builds and deploys a fullstack AWS environment with Next.js on the fro
   - AWS CloudFormation - https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html
   - AWS CloudWatch - https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html
   - AWS Certificate Manager (ACM) - https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html
+<<<<<<< HEAD
   - AWS Route 53 DNS - https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html
   - AWS CloudFront CDN - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html
   - AWS CLI - https://docs.aws.amazon.com/cli/ | https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html
@@ -203,3 +210,7 @@ You will notice that our `BackendStack` will have a different ARN/Id eventhough 
 =======
 # aws-bedrock-ai-lambda-serverless-nextjs
 >>>>>>> Initial commit
+=======
+  - Route 53 - https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html
+  - ...
+>>>>>>> init: README - technology stack
