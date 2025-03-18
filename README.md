@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AWS Bedrock AI Lambda Serverless Next.js
 
 This repo builds and deploys a fullstack AWS environment with Next.js on the frontend.
@@ -199,3 +200,6 @@ You will notice that our `BackendStack` will have a different ARN/Id eventhough 
 
 - ref: Amazon Resource Name (ARN) - https://docs.aws.amazon.com/managedservices/latest/userguide/find-arn.html
 - ref: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html
+=======
+# aws-bedrock-ai-lambda-serverless-nextjs
+>>>>>>> Initial commit
