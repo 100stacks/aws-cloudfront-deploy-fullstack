@@ -1,10 +1,11 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> init: README - technology stack
-# AWS Bedrock AI Lambda Serverless Next.js
+# AWS CloudFront Fullstack Deploy
 
-This repo builds and deploys a fullstack AWS environment with Next.js on the frontend.
+- This repo is a cleanup version of another repo to make it more versitle and useful
+  as a template for deploying an Next.js app to AWS CloudFront with a default
+  customizable splash screen.
+- This repo for deploying to AWS CloudFront and not to Route 53, which is a more
+  involved process.
+- If you want to see a Route 53 deployment, see repo TBD.
 
 ## Technology Stack
 
@@ -17,14 +18,7 @@ This repo builds and deploys a fullstack AWS environment with Next.js on the fro
   - Radix UI - https://www.radix-ui.com
   - Radix Icons - https://www.radix-ui.com/icons
   - Tailwind CSS - https://tailwindcss.com
-<<<<<<< HEAD
-<<<<<<< HEAD
   - monorepo using npm workspaces - https://docs.npmjs.com/cli/v11/using-npm/workspaces
-=======
->>>>>>> init: README - technology stack
-=======
-  - monorepo using npm workspaces - https://docs.npmjs.com/cli/v11/using-npm/workspaces
->>>>>>> cdk: init typescript backend
   - ...
 
 - **Backend:**
@@ -33,16 +27,9 @@ This repo builds and deploys a fullstack AWS environment with Next.js on the fro
   - AWS Bedrock AI Models - https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html
   - AWS CloudFormation - https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html
   - AWS CloudWatch - https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html
-  - AWS Certificate Manager (ACM) - https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - AWS Route 53 DNS - https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html
   - AWS CloudFront CDN - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html
   - AWS CLI - https://docs.aws.amazon.com/cli/ | https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html
   - monorepo using npm workspaces - https://docs.npmjs.com/cli/v11/using-npm/workspaces
-  - SSL Certificates - https://letsencrypt.org/how-it-works/ | https://www.cloudflare.com/learning/ssl/what-is-an-ssl-certificate/
-  - ...
 
 ## Prerequisites
 
@@ -213,24 +200,12 @@ You will notice that our `BackendStack` will have a different ARN/Id eventhough 
 
 - ref: Amazon Resource Name (ARN) - https://docs.aws.amazon.com/managedservices/latest/userguide/find-arn.html
 - ref: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html
-=======
-# aws-bedrock-ai-lambda-serverless-nextjs
->>>>>>> Initial commit
-=======
-  - Route 53 - https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html
-  - ...
->>>>>>> init: README - technology stack
-=======
-  - AWS Route 53 - https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html
-  - AWS CloudFront CDN -
-=======
-  - AWS Route 53 DNS - https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html
-  - AWS CloudFront CDN - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html
->>>>>>> docs: README tweaks
-  - AWS CLI - https://docs.aws.amazon.com/cli/ | https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html
-  - monorepo using npm workspaces - https://docs.npmjs.com/cli/v11/using-npm/workspaces
-  - SSL Certificates - https://letsencrypt.org/how-it-works/ | https://www.cloudflare.com/learning/ssl/what-is-an-ssl-certificate/
-  - ...
+- Route 53 - https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html
+- AWS CloudFront CDN - https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html
+- AWS CLI - https://docs.aws.amazon.com/cli/ | https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html
+- monorepo using npm workspaces - https://docs.npmjs.com/cli/v11/using-npm/workspaces
+- SSL Certificates - https://letsencrypt.org/how-it-works/ | https://www.cloudflare.com/learning/ssl/what-is-an-ssl-certificate/
+- ...
 
 ## Prerequisites
 
@@ -289,9 +264,6 @@ Bootstrap and provision your CloudFormation ennvironment. You need to only do th
 ```bash
 cdk bootstrap aws://[***aws-acct***]/us-east-1
 ```
-<<<<<<< HEAD
->>>>>>> docs: boostrap AWS CDK environment in a region
-=======
 
 ## Initalize your AWS CDK TypeScript environment.
 
@@ -306,9 +278,6 @@ mkdir backend
 cd backend
 cdk init app --language typescript
 ```
-<<<<<<< HEAD
->>>>>>> cdk: init typescript backend
-=======
 
 ### Run `cdk synth` to _synthesis_ the _cloud assembly_
 
@@ -343,9 +312,6 @@ Default output format [json]:
 - ref: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
 - ref: https://www.pluralsight.com/resources/blog/cloud/configuring-the-aws-command-line-interface
 - ref: https://www.pluralsight.com/resources/blog/cloud/aws-s3-cheat-sheet
-<<<<<<< HEAD
->>>>>>> cdk: cdk synth | cdk deploy AWS typescript backend
-=======
 
 ## Make sure to cleanup as needed 🧹
 
@@ -375,9 +341,6 @@ Are you sure you want to delete: BackendStack (y/n)? y
 
  ✅  BackendStack: destroyed
 ```
-<<<<<<< HEAD
->>>>>>> cdk: cdk destroy AWS typescript backend
-=======
 
 ### Rebuild and redeploy
 
@@ -413,4 +376,3 @@ You will notice that our `BackendStack` will have a different ARN/Id eventhough 
 
 - ref: Amazon Resource Name (ARN) - https://docs.aws.amazon.com/managedservices/latest/userguide/find-arn.html
 - ref: https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html
->>>>>>> cdk: cdk deploy AWS typescript backend
