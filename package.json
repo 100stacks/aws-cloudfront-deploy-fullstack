@@ -7,7 +7,8 @@
     "frontend:dev": "npm run dev --workspace=@100stacks/frontend",
     "frontend:build": "npm run build --workspace=@100stacks/frontend",
     "aws:deploy": "cd backend; cdk deploy",
-    "aws:destroy": "cd backend; cdk destroy"
+    "aws:destroy": "cd backend; cdk destroy",
+    "aws:synth": "cd backend; cdk synth"
   },
   "repository": {
     "type": "git",
@@ -30,10 +31,6 @@
   ],
   "author": "James Thompson (@100stacks)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/100stacks/aws-cloudfront-deploy-fullstack/issues"
-  },
-  "homepage": "https://github.com/100stacks/aws-cloudfront-deploy-fullstack#readme",
   "workspaces": [
     "frontend/**",
     "backend/**"

@@ -1,1 +1,1 @@
-export * from "./BedrockAIStack";
+export * from "./CloudFrontStack";

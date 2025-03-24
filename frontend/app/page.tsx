@@ -2,12 +2,8 @@
 
 import { CountdownTimer } from "@/components/countdown-timer";
 import { Rocket } from "lucide-react";
-import { useState } from "react";
-import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-
   // Set launch date to 30 days from now
   const launchDate = new Date();
   launchDate.setDate(launchDate.getDate() + 30);
@@ -21,7 +17,7 @@ export default function Home() {
             Our Launch is Coming Soon
           </h1>
           <p className="text-muted-foreground text-lg sm:text-xl max-w-2xl mx-auto">
-            We're working hard to bring you something extraordinary. Stay tuned
+            We are working hard to bring you something extraordinary. Stay tuned
             and be the first to know when we launch.
           </p>
         </div>

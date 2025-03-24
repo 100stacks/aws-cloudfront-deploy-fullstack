@@ -4,7 +4,7 @@ import * as s3 from "aws-cdk-lib/aws-s3";
 import * as s3deploy from "aws-cdk-lib/aws-s3-deployment";
 import * as cloudfront from "aws-cdk-lib/aws-cloudfront";
 
-export class CloudFrontDeployStack extends cdk.Stack {
+export class CloudFrontStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
@@ -51,9 +51,10 @@ export class CloudFrontDeployStack extends cdk.Stack {
       distributionPaths: ["/*"],
     });
 
-    // CloudFormation Output construct (i.e., console log for CloudFormation CDK)
-    new cdk.CfnOutput(this, "webUrl", {
-      exportName: "webUrl",
+    // CloudFormation Output construct (i.e., console log for CloudFormation/CDK)
+    // NOTE: `exportName` must be unique across all of your AWS CDK stacks.
+    new cdk.CfnOutput(this, "cfUrl", {
+      exportName: "cfUrl",
       value: `https://${distro.distributionDomainName}`,
     });
   }
