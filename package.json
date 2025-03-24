@@ -1,6 +1,6 @@
 {
   "name": "@100stacks/aws-cloudfront-deploy-fullstack",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "AWS CloudFront fullstack Deploy",
   "private": true,
   "scripts": {
@@ -8,21 +8,16 @@
     "frontend:build": "npm run build --workspace=@100stacks/frontend",
     "aws:deploy": "cd backend; cdk deploy",
     "aws:destroy": "cd backend; cdk destroy",
-    "aws:synth": "cd backend; cdk synth"
+    "aws:synth": "cd backend; cdk synth",
+    "aws:diff": "cd backend; cdk diff"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/100stacks/aws-cloudfront-deploy-fullstack.git"
   },
   "keywords": [
-    "ai",
-    "aws",
     "aws",
     "cdk",
-    "bedrock",
-    "anthropic",
-    "llama3",
-    "titan",
     "nextjs",
     "shadcn/ui",
     "tailwind",
