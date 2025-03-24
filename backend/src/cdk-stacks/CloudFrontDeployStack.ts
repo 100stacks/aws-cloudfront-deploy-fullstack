@@ -4,7 +4,7 @@ import * as s3 from "aws-cdk-lib/aws-s3";
 import * as s3deploy from "aws-cdk-lib/aws-s3-deployment";
 import * as cloudfront from "aws-cdk-lib/aws-cloudfront";
 
-export class BedrockAIStack extends cdk.Stack {
+export class CloudFrontDeployStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
@@ -46,7 +46,7 @@ export class BedrockAIStack extends cdk.Stack {
     // s3 construct to deploy the website dist content
     new s3deploy.BucketDeployment(this, "WebsiteS3BucketDeploy", {
       destinationBucket: bucket,
-      sources: [s3deploy.Source.asset("../apps/frontend/dist")],
+      sources: [s3deploy.Source.asset("../frontend/dist")],
       distribution: distro,
       distributionPaths: ["/*"],
     });

@@ -1,8 +1,7 @@
 # AWS CloudFront Fullstack Deploy
 
-- This repo is a cleanup version of another repo to make it more versitle and useful
-  as a template for deploying an Next.js app to AWS CloudFront with a default
-  customizable splash screen.
+- This repo serves as a versatile and useful template for deploying an AWS CDK and Next.js app with
+  a default customizable splash screen.
 - This repo for deploying to AWS CloudFront and not to Route 53, which is a more
   involved process.
 - If you want to see a Route 53 deployment, see repo TBD.
@@ -82,6 +81,10 @@ aws configure get region
 ```
 
 Bootstrap and provision your CloudFormation ennvironment. You need to only do this once in each region you plan to provision resources.
+
+## Backend
+
+For detailed instuctions for deployint the AWS CDK please see [Backend README](./backend/README.md)
 
 **NOTE: If you plan to deploy your application to the Internet via Route 53 to your own website (www.example.com), you will need to deploy your application in the `us-east-1` Region.**
 
