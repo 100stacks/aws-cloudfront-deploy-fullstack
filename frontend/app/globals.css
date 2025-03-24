@@ -8,8 +8,6 @@
   }
 }
 
-
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -82,8 +80,6 @@
   }
 }
 
-
-
 @layer base {
   * {
     @apply border-border;
@@ -91,4 +87,23 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* app/globals.css (additions to add at the end of your existing globals.css) */
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure text is visible on dark backgrounds */
+.text-shadow {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }

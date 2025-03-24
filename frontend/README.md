@@ -1,8 +1,6 @@
-# Frontend - AWS Bedrock AI
+# Frontend - AWS CloudFront NextJS Fullstack Deploy
 
-The frontend was created with [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-I'm using the previous major release `14x` as a baseline as this application has a number of third-party dependencies and we want a somewhat stable developer experience (DX).
+- Provides a website with a landing page and a countdown timer.
 
 ## Getting Started - Next.js v14.2.25
 
@@ -20,7 +18,6 @@ Ok to proceed? (y) y
 ✔ Would you like to use App Router? (recommended) … No / Yes ✅
 ✔ Would you like to customize the default import alias (@/*)? … No / Yes ✅
 ✔ What import alias would you like configured? … @/* ✅
-Creating a new Next.js app in /aws-bedrock-ai-lambda-serverless-nextjs/frontend.
 
 Using npm.
 
@@ -43,30 +40,7 @@ Installing devDependencies:
 - eslint-config-next
 ```
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## We see that the Getting Started home page is missing svg icons
-
-The `create-next-app` getting started page has changed with the patch builds, so using a previous version as baseline.
-
-![missing svg icons](https://github.com/user-attachments/assets/e867cc9b-462f-4b29-b183-f1528efee413)
-
-- Fix missing icons
-- Add personal icon if you wish
-
-![fix start page](https://github.com/user-attachments/assets/dc90ddd4-3b2d-4ecf-80a7-5ce24c624e12)
 
 ## Install Shadcn UI Components
 
@@ -105,8 +79,6 @@ You may now add components.
 ```
 
 2. Now add your shadcn/ui components - https://ui.shadcn.com/docs/components/accordion. You can additional components later if you need to.
-
-For our application will our going to build a version of [Vercel's Internal Knowledge Base - AI SDK template](https://vercel.com/templates/next.js/ai-sdk-internal-knowledge-base). For MVP, we won't include auth constructs so that it may be used as a portfolio project.
 
 ```bash
 ➜ npx shadcn add sidebar-07 alert-dialog button card dropdown-menu input label select separator sheet skeleton textarea tooltip

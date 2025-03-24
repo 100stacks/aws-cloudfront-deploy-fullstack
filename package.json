@@ -1,27 +1,23 @@
 {
-  "name": "@100stacks/aws-bedrock-ai",
-  "version": "0.3.0",
-  "description": "AWS Bedrock AI",
+  "name": "@100stacks/aws-cloudfront-deploy-fullstack",
+  "version": "1.0.0",
+  "description": "AWS CloudFront fullstack Deploy",
   "private": true,
   "scripts": {
     "frontend:dev": "npm run dev --workspace=@100stacks/frontend",
     "frontend:build": "npm run build --workspace=@100stacks/frontend",
     "aws:deploy": "cd backend; cdk deploy",
-    "aws:destroy": "cd backend; cdk destroy"
+    "aws:destroy": "cd backend; cdk destroy",
+    "aws:synth": "cd backend; cdk synth",
+    "aws:diff": "cd backend; cdk diff"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/100stacks/aws-bedrock-ai-lambda-serverless-nextjs.git"
+    "url": "git+https://github.com/100stacks/aws-cloudfront-deploy-fullstack.git"
   },
   "keywords": [
-    "ai",
-    "aws",
     "aws",
     "cdk",
-    "bedrock",
-    "anthropic",
-    "llama3",
-    "titan",
     "nextjs",
     "shadcn/ui",
     "tailwind",
@@ -30,10 +26,6 @@
   ],
   "author": "James Thompson (@100stacks)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/100stacks/aws-bedrock-ai-lambda-serverless-nextjs/issues"
-  },
-  "homepage": "https://github.com/100stacks/aws-bedrock-ai-lambda-serverless-nextjs#readme",
   "workspaces": [
     "frontend/**",
     "backend/**"
