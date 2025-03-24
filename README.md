@@ -1,5 +1,7 @@
 # AWS CloudFront Fullstack Next.js Deploy
 
+![app](https://github.com/user-attachments/assets/5459c139-92bc-429b-af86-76d56674f19e)
+
 - This repo serves as a versatile template for deploying a Next.js app using AWS CDK with
   a default customizable splash screen with a customizable 30-day countdown timer.
 - Deploys to AWS CloudFront with a CloudFront public IP - `*.cloudfront.net`.
